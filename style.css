@@ -1,4 +1,8 @@
 body {
+    background-image: url('images/STScI-01HF7P3B6PW5DS5N9M9XD1EY27.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #d2d2d2;
@@ -8,21 +12,62 @@ body {
 }
 
 header {
-    background: #878786;
+    background-image: url('images/main_image_star-forming_region_carina_nircam_final-5mb.jpg');
+    background-size: cover;
+    background-position: center;
     color: #ffffff;
     padding: 1rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 1rem;
+    margin-left: 2rem;
+}
+
+.header-content {
+    text-align: left;
 }
 
 header h1 {
     margin: 0;
 }
 
+header a:link { /* Unvisited links */
+    color: #FFFF00;
+}
+
+header a:visited { /* Visited links */
+    color: #ff00d9;
+}
+
+header a:hover { /* User hovers over the link */
+    color: #36fa05;
+}
+
+header a:active { /* Selected link */
+    color: #FFFF00;
+}
+
+
 section {
     padding: 1rem;
     margin: 1rem;
+}
+
+h2 {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #333;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 10%;
 }
 
 /* Desktop Style */
@@ -56,7 +101,7 @@ section {
 
 /* Mobile Style */
 @media screen and (max-width: 768px) {
-    #experience, #projects {
+    #combined-sections {
         flex-direction: column;
     }
 
