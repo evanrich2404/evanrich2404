@@ -41,11 +41,11 @@ header h1 {
 }
 
 header a:link { /* Unvisited links */
-    color: #FFFF00;
+    color: #fafa7d;
 }
 
 header a:visited { /* Visited links */
-    color: #ff00d9;
+    color: #00eeff;
 }
 
 header a:hover { /* User hovers over the link */
@@ -53,7 +53,7 @@ header a:hover { /* User hovers over the link */
 }
 
 header a:active { /* Selected link */
-    color: #FFFF00;
+    color: #fafa7d;
 }
 
 
@@ -68,6 +68,53 @@ h2 {
     padding: 5px 10px;
     display: inline-block;
     border-radius: 10%;
+}
+
+.about-me {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h2 {
+    color: #333;
+}
+
+.about-me p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.project-text {
+    position: relative;
+}
+
+.project-image {
+    position: absolute;
+    bottom: 2%;
+    left: 10%; /* Start by positioning to the right */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 500px; /* Adjust as needed */
+    pointer-events: none;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hover-instruction {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
+
+.hover-instruction:hover + .project-image, .project-image:hover {
+    opacity: 1;
 }
 
 /* Desktop Style */
